@@ -9,6 +9,13 @@ function Eshop() {
 
   const [data, setData] = useState(Products);
   const [search, setSearch] = useState('');
+  const filterResult = (catItem)=>{
+     const result = Products.filter((curData)=>{
+      return curData.category === catItem;
+     })
+  }
+
+
   return (
     <>
       <Heroshop/>
@@ -28,16 +35,23 @@ function Eshop() {
             <input type="text" onChange={(e)=> setSearch(e.target.value)} class="form-control" id="exampleFormControlInput1" placeholder="Search....."/>
             </div>
             <h3 className='mb-3'>Filter by Category</h3>
-            <button className='w-100 mb-3'>Poster</button>
-            <button className='w-100 mb-3'>Image</button>
-            <button className='w-100 mb-3'>Logo</button>
+            <button className='w-100 mb-3' onClick={()=>filterResult('Poster')}>Poster</button>
+            <button className='w-100 mb-3' onClick={()=>filterResult('Image')}>Image</button>
+            <button className='w-100 mb-3' onClick={()=>filterResult('Logo')}>Logo</button>
 
           </div>
           <div className='col-md-9'>
             
             {/* <ProductList Products = {data}/> */}
             <div className='row'>
-              {data.map((values) => {
+              {data.filter((val)=>{
+                if(search === ''){
+                  return val;
+                }
+                else{
+                  return val.title.toLowerCase().includes(search.toLowerCase());
+                }
+              }).map((values) => {
                 const {id,title,price, imageUrl} = values;
                 return(
                   <div className='col-md-4 mb-4' key={id}>

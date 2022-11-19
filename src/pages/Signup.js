@@ -44,7 +44,8 @@ function Signup() {
               <input type="password" className="form-control" id="exampleInputPassword1" />
             </div>
             <div className="my-3">
-            <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+            <div id="emailHelp" className="form-text">Je reconnais avoir pris connaissance et j’accepte les<br/>
+            termes des conditions générales d’utilisation</div>
 
             </div>
             

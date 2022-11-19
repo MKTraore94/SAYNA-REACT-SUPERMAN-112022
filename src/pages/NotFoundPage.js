@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function NotFoundPage() {
   return (
@@ -11,8 +12,14 @@ function NotFoundPage() {
       <div class="col-md-6 text-center mt-5">
         <h1>404 ERROR</h1>
         <h6>Cette page n'existe pas ou n'existe plus</h6>
+        <Link to='home'>
         <button >Allez sur notre page d'acccueil</button> &nbsp;
+        </Link>
+        
+        <Link to='eshop'>
         <button >Voir nos produits</button>
+        </Link>
+        
       </div>
     </div>
   </div>

@@ -10,6 +10,7 @@ import Game from '../pages/Game';
 import Signup from '../pages/Signup';
 import Login from '../pages/Login';
 import Cart from '../pages/Cart';
+import Deconnexion from '../pages/Deconnexion';
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
         <Route path='compte' element= {<MonCompte/>}/>
         <Route path='signup' element= {<Signup/>}/>
         <Route path='login' element= {<Login/>}/>
+        <Route path='deconnexion' element= {<Deconnexion/>}/>
         <Route path='cart' element= {<Cart/>}/>
         <Route path='*' element= {<NotFoundPage/>}/>
 

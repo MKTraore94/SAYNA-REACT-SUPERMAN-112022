@@ -33,7 +33,10 @@ function MonCompte() {
                   <Link to="/signup">
                   <button className="mt-5">INSCRIPTION</button>
                   </Link>
+                  <Link to="/deconnexion">
                   <button className="mt-5">DECONNEXION</button>
+                  </Link>
+                  
                 </ul>
               </nav>
             </div>

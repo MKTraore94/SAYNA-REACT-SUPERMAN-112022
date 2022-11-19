@@ -7,7 +7,7 @@ import logo_3 from '../assets/logos/logo_3.png';
 import facebook from '../assets/icones/facebook.png';
 import instagram from '../assets/icones/instagram.png';
 import twitter from '../assets/icones/twitter.png';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -18,23 +18,23 @@ function Footer() {
         Ce projet respecte l’univers cinématographique des films Superman
       </div>
       <div className="social-footer">
-        <NavLink href="" className="social-item hoveryellow ">
+        <Link href="" className="social-item hoveryellow ">
           <img width="4%" src={logo_1} alt="" />
           <img src={logo_2} alt="" />
           <img width="4%" src={logo_3} alt="" />
-        </NavLink>
-        <NavLink href="" className="social-item"
+        </Link>
+        <Link href="" className="social-item"
           ><img
             className="hoveryellow"
             src={facebook}
             alt=""
-        /></NavLink>
-        <NavLink href="" className="social-item"
+        /></Link>
+        <Link href="" className="social-item"
           ><img className="hoveryellow" src={instagram} alt=""
-        /></NavLink>
-        <NavLink href="" className="social-item"
+        /></Link>
+        <Link href="" className="social-item"
           ><img className="hoveryellow" src={twitter} alt=""
-        /></NavLink>
+        /></Link>
       </div>
     </div>
   </footer>

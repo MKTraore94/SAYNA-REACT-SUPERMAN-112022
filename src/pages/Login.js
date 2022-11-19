@@ -35,7 +35,7 @@ function Login() {
             <input type="checkbox" className="form-check-input" id="exampleCheck1" />
             <label className="form-check-label" for="exampleCheck1">Check me out</label>
           </div>
-          <button type="submit" className="btn btn-primary w-100">VALIDER</button>
+          <button height="80" width="531" type="submit" className="btn btn-primary w-100">VALIDER</button>
         </form>
 
       </div>
